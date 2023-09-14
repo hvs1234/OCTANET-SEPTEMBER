@@ -1,0 +1,151 @@
+body {
+    font-family: 'Ubuntu';
+    margin: 0;
+    padding: 0;
+    transition: 0.2s;
+}
+
+body::before
+{
+    background: linear-gradient(to right,crimson,rgb(255, 92, 125));
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
+}
+
+.header
+{
+    box-shadow: 0px 2px 20px black;
+    display: flex;
+    align-items: center;
+    padding: 22px 12px;
+    border-radius: 0 0 30px 30px;
+}
+.header h1
+{
+    letter-spacing: 3px;
+    font-family: 'Ubuntu';
+    margin-left: 2rem;
+    color: white;
+    font-weight: 100;
+    cursor: grab;
+}
+.header h1 span
+{
+    color: aqua;
+}
+.header h2
+{
+    margin: 0 38rem;
+    color: wheat;
+    font-family: 'Mate SC';
+    letter-spacing: 3px;
+    font-size: 3rem;
+    font-weight: 100;
+    text-shadow: 0px 2px 20px black;
+    cursor: grab;
+}
+
+.container {
+    border: 0;
+    max-width: 800px;
+    margin: 10rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+    box-shadow: 0 2px 20px black;
+    border-radius: 20px;
+}
+
+.container h1 
+{
+    text-align: center;
+    font-family: 'Satisfy';
+    font-weight: 100;
+    font-size: 3rem;
+    color: rgb(231, 229, 225);
+    text-shadow: 0px 2px 20px black;
+    letter-spacing: 3px;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 12px;
+    text-align: center;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    box-shadow: 0 2px 20px black;
+    background-color: pink;
+    font-size: 1.2rem;
+    font-family: 'Mate SC';
+}
+
+button {
+    padding: 10px 40px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    box-shadow: 0 2px 5px black;
+    cursor: pointer;
+    margin-top: 2.5rem;
+    font-size: 1rem;
+    font-family: 'Mate SC';
+    letter-spacing: 3px;
+    border-radius: 20px;
+}
+
+button:hover{background-color: #0f65c2; color: yellow;}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-bottom: 50px;
+}
+
+li {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0;
+    font-size: 1.3rem;
+    font-family: 'Mate SC' , sans-serif;
+    letter-spacing: 3px;
+    font-weight: 100;
+    padding-top: 0px;
+    text-transform: uppercase;
+    color: white;
+}
+
+#addTask
+{
+    margin-top: 4rem;
+}
+
+.delete {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 5px 20px;
+    font-size: 1rem;
+    position: relative;
+    bottom: 20px;
+    font-family: 'Dosis' , sans-serif;
+    letter-spacing: 2px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.delete:hover
+{
+    background-color: #f83232;
+    color: aqua;
+}
